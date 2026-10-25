@@ -1,13 +1,24 @@
 {
-  "name": "aiot-git-workflow",
-  "version": "1.0.0",
-  "description": "AIoT / Web Git 協作流程：main/develop/feature 分支、commit 格式、機密掃描、PR/MR",
+  "name": "aiot",
+  "version": "1.1.0",
+  "description": "AIoT / Web 團隊開發規範：Git 協作流程（commit 格式、機密掃描、PR/MR）與 Python 規範（logging、try-except、API 設計）",
   "author": {
     "name": "b0981075285",
     "url": "https://github.com/b0981075285"
   },
   "repository": "https://github.com/b0981075285/AIoT-Skill",
   "license": "MIT",
-  "keywords": ["iot", "aiot", "python", "mqtt", "openclaw", "web", "git-workflow"],
+  "keywords": [
+    "iot",
+    "aiot",
+    "python",
+    "fastapi",
+    "mqtt",
+    "openclaw",
+    "web",
+    "git-workflow",
+    "logging",
+    "api-design"
+  ],
   "skills": "./skills/"
 }

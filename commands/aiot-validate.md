@@ -3,7 +3,7 @@ description: 驗證目前分支名稱、已 stage 的檔案（機密 / 垃圾檔
 argument-hint: "[branch <name> | commit \"<msg>\" | staged]（留空則自動檢查全部）"
 ---
 
-在使用者目前的專案根目錄，執行 aiot-git-workflow plugin 內的驗證腳本。
+在使用者目前的專案根目錄，執行 aiot plugin 內 aiot-git-workflow 的驗證腳本。
 
 ```
 bash "${CLAUDE_PLUGIN_ROOT}/skills/aiot-git-workflow/scripts/validate.sh" $ARGUMENTS

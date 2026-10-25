@@ -5,7 +5,7 @@
   },
   "plugins": [
     {
-      "name": "aiot-git-workflow",
+      "name": "aiot",
       "source": {
         "source": "local",
         "path": "./"

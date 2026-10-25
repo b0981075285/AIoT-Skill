@@ -1,0 +1,36 @@
+# 建議的 ruff 設定 (新專案用；既有專案只挑需要的規則加，避免一次冒出幾百個錯誤)
+# 文件：https://docs.astral.sh/ruff/rules/
+
+line-length = 120
+target-version = "py310"   # 依專案最低支援版本調整
+
+[lint]
+select = [
+    "E", "W",   # pycodestyle
+    "F",        # pyflakes：未使用的 import / 變數、未定義名稱
+    "I",        # import 排序
+    "N",        # PEP 8 命名
+    "UP",       # 新版 Python 寫法
+    "B",        # 常見 bug (可變預設參數、except 後沒 from e 等)
+    "BLE",      # 禁止盲抓 except Exception (邊界處用 # noqa: BLE001 標明)
+    "E722",     # 禁止 bare except
+    "S110",     # 禁止 try-except-pass
+    "TRY",      # 例外處理寫法 (raise from、不要在 try 裡 return 等)
+    "G",        # logging 格式：不要在 log 呼叫裡用 f-string / .format
+    "LOG",      # logging 誤用
+    "T20",      # 禁止 print
+    "ASYNC",    # async 函式裡呼叫阻塞函式
+    "SIM",      # 可簡化的寫法
+]
+ignore = [
+    "E501",     # 行長交給 formatter
+    "TRY003",   # 允許在 raise 時直接寫訊息
+]
+
+[lint.per-file-ignores]
+"tests/**/*.py" = ["T20", "S", "BLE"]
+"scripts/**/*.py" = ["T20"]   # CLI 腳本可以 print
+
+[format]
+quote-style = "double"
+indent-style = "space"
