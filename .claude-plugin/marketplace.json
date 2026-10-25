@@ -1,0 +1,24 @@
+{
+  "name": "aiot-skills",
+  "owner": {
+    "name": "b0981075285"
+  },
+  "description": "AIoT / Web 團隊的 Claude Code 與 Codex skills",
+  "metadata": {
+    "description": "AIoT / Web 團隊的 Claude Code 與 Codex skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "aiot-git-workflow",
+      "source": "./",
+      "description": "AIoT / Web Git 協作流程：main/develop/feature 分支、commit 格式、機密掃描、PR/MR",
+      "version": "1.0.0",
+      "author": {
+        "name": "b0981075285"
+      },
+      "keywords": ["iot", "aiot", "python", "mqtt", "openclaw", "web", "git-workflow"],
+      "category": "development"
+    }
+  ]
+}

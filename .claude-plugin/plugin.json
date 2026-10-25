@@ -1,0 +1,11 @@
+{
+  "name": "aiot-git-workflow",
+  "version": "1.0.0",
+  "description": "AIoT / Web Git 協作流程：main/develop/feature 分支、commit 格式、機密掃描、PR/MR",
+  "author": {
+    "name": "b0981075285"
+  },
+  "repository": "https://github.com/b0981075285/AIoT-Skill",
+  "license": "MIT",
+  "keywords": ["iot", "aiot", "python", "mqtt", "openclaw", "web", "git-workflow"]
+}
